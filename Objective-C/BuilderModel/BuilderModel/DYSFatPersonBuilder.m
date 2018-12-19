@@ -9,27 +9,27 @@
 #import "DYSFatPersonBuilder.h"
 
 @implementation DYSFatPersonBuilder
-- (void)buildHeader{
+- (void)buildHeader {
     NSLog(@"画出大号的头");
 }
 
-- (void)buildBody{
+- (void)buildBody {
     NSLog(@"画出大号的身体");
 }
 
-- (void)buildLeftArm{
+- (void)buildLeftArm {
     NSLog(@"画出大号的左手");
 }
 
-- (void)buildRightArm{
+- (void)buildRightArm {
     NSLog(@"画出大号的右手");
 }
 
-- (void)buildLeftLeg{
+- (void)buildLeftLeg {
     NSLog(@"画出大号的左腿");
 }
 
-- (void)buildRightLeg{
+- (void)buildRightLeg {
     NSLog(@"画出大号的右腿");
 }
 

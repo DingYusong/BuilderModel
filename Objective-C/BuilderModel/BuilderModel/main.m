@@ -6,10 +6,10 @@
 //  Copyright © 2018 丁玉松. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DYSFatPersonBuilder.h"
 #import "DYSPersonBuilderDirector.h"
 #import "DYSThinPersonBuilder.h"
-#import "DYSFatPersonBuilder.h"
+#import <Foundation/Foundation.h>
 
 /**
  场景：画人，人有胖瘦之分（头，身子，左胳膊，右胳膊，左腿，右腿）六个元素不能少。
@@ -22,18 +22,17 @@
  
  新增一种类型的人，只需要增加一个创建类，符合开闭原则。
  */
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[]) {
     @autoreleasepool {
-        
+
         DYSPersonBuilderDirector *director = [DYSPersonBuilderDirector new];
         DYSPersonBuilder *builder = [DYSThinPersonBuilder new];
         director.personBuilder = builder;
         [director createPerson];
-        
+
         builder = [DYSFatPersonBuilder new];
         director.personBuilder = builder;
         [director createPerson];
-        
     }
     return 0;
 }

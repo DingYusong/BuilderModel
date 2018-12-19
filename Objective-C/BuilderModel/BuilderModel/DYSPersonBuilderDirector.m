@@ -10,11 +10,11 @@
 
 @implementation DYSPersonBuilderDirector
 
-- (void)createPerson{
+- (void)createPerson {
     if (!self.personBuilder) {
         NSLog(@"缺少建造者");
     }
-    
+
     [self.personBuilder buildHeader];
     [self.personBuilder buildBody];
     [self.personBuilder buildLeftArm];

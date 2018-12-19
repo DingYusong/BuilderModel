@@ -1,6 +1,8 @@
 # BuilderModel
 
-建造者模式
+建造者模式又叫生成器模式是一种创建型设计模式，它把对象的创建步骤抽象成生成器，并且可以通过指导类（director）对所有生成步骤的先后顺序进行控制。客户端使用指导类并传入相应的生成器，通过指导类的接口便可以得到相应的对象。
+
+
 
 属于创建者模式。
 
@@ -21,3 +23,22 @@
  
 
 新增一种类型的人，只需要增加一个创建类，符合开闭原则。
+
+```objective-c
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        
+        DYSPersonBuilderDirector *director = [DYSPersonBuilderDirector new];
+        DYSPersonBuilder *builder = [DYSThinPersonBuilder new];
+        director.personBuilder = builder;
+        [director createPerson];
+        
+        builder = [DYSFatPersonBuilder new];
+        director.personBuilder = builder;
+        [director createPerson];
+        
+    }
+    return 0;
+}
+```
+

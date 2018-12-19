@@ -10,28 +10,22 @@
 
 @implementation DYSPersonBuilder
 
-- (void)buildHeader{
-    
+- (void)buildHeader {
 }
 
-- (void)buildBody{
-    
+- (void)buildBody {
 }
 
-- (void)buildLeftArm{
-    
+- (void)buildLeftArm {
 }
 
-- (void)buildRightArm{
-    
+- (void)buildRightArm {
 }
 
-- (void)buildLeftLeg{
-    
+- (void)buildLeftLeg {
 }
 
-- (void)buildRightLeg{
-    
+- (void)buildRightLeg {
 }
 
 @end
